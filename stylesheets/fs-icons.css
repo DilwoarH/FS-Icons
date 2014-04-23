@@ -1,11 +1,11 @@
-.fs-icons.sidebar{background-image:url(../images/fs-icons.png);width:92px;height:92px}.fs-icons.sidebar.text{background-position:-574px 0}
+.fs-icons.sidebar{background-image:url('../images/fs-icons.png');width:92px;height:92px;-ms-transform:scale(1, 1);-webkit-transform:scale(1, 1);transform:scale(1, 1)}.fs-icons.sidebar.text{background-position:-574px 0}
 .fs-icons.sidebar.number{background-position:-574px -92px}
 .fs-icons.sidebar.list{background-position:-574px -184px}
 .fs-icons.sidebar.datetime{background-position:-574px -276px}
 .fs-icons.sidebar.map{background-position:-574px -368px}
 .fs-icons.sidebar.others{background-position:-574px -460px}
 .fs-icons.sidebar.special{background-position:-574px -552px}
-.fs-icons.field{background-image:url(../images/fs-icons.png);width:286px;height:75px;-ms-transform:scale(.6, .6);-webkit-transform:scale(.6, .6);transform:scale(.6, .6)}.fs-icons.field.text{background-position:0 0}
+.fs-icons.field{background-image:url('../images/fs-icons.png');width:286px;height:92px;-ms-transform:scale(.6, .6);-webkit-transform:scale(.6, .6);transform:scale(.6, .6)}.fs-icons.field.text{background-position:0 0}
 .fs-icons.field.text:hover{background-position:-286px 0}
 .fs-icons.field.textarea{background-position:0 -92px}
 .fs-icons.field.textarea:hover{background-position:-286px -92px}
@@ -49,7 +49,7 @@
 .fs-icons.field.mapSingle:hover{background-position:-286px -1835px}
 .fs-icons.field.mapMultiple{background-position:0 -1927px}
 .fs-icons.field.mapMultiple:hover{background-position:-286px -1927px}
-.fs-icons.field-no-text{background-image:url(../images/fs-icons.png);width:75px;height:75px;-ms-transform:scale(1, 1);-webkit-transform:scale(1, 1);transform:scale(1, 1)}.fs-icons.field-no-text.text{background-position:0 0}
+.fs-icons.field-no-text{background-image:url('../images/fs-icons.png');width:75px;height:75px;-ms-transform:scale(1, 1);-webkit-transform:scale(1, 1);transform:scale(1, 1)}.fs-icons.field-no-text.text{background-position:0 0}
 .fs-icons.field-no-text.text:hover{background-position:-286px 0}
 .fs-icons.field-no-text.textarea{background-position:0 -92px}
 .fs-icons.field-no-text.textarea:hover{background-position:-286px -92px}

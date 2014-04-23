@@ -1,407 +1,432 @@
+//generic
+@location : '../images/fs-icons.png';
+
+//sidebar
+@sidebar-scale: 1;
+@sidebar-width: 92px;
+@sidebar-height: 92px;
+@sidebar-x-pos: -574px;
+
+//field
+@field-scale: 0.6;
+@field-width: 286px;
+@field-height: 92px;
+@field-x-pos: 0px;
+@field-x-pos-hover: -286px;
+
+//field-no-text
+@field-no-text-scale: 1;
+@field-no-text-width: 75px;
+@field-no-text-height: 75px;
+
 .fs-icons {
 	&.sidebar {
-		background-image: url(../images/fs-icons.png);
+		background-image: url(@location);
 		width: 92px;
 		height: 92px;
 
+		-ms-transform: scale(@sidebar-scale,@sidebar-scale); /* IE 9 */
+		-webkit-transform: scale(@sidebar-scale,@sidebar-scale); /* Chrome, Safari, Opera */
+		transform: scale(@sidebar-scale,@sidebar-scale);
+
 		&.text{
-			background-position: -574px 0px;
+			background-position: @sidebar-x-pos 0px;
 		}
 
 		&.number{
-			background-position: -574px -92px;
+			background-position: @sidebar-x-pos -92px;
 		}
 
 		&.list{
-			background-position: -574px -184px;
+			background-position: @sidebar-x-pos -184px;
 		}
 
 		&.datetime{
-			background-position: -574px -276px;
+			background-position: @sidebar-x-pos -276px;
 		}
 
 		&.map{
-			background-position: -574px -368px;
+			background-position: @sidebar-x-pos -368px;
 		}
 
 		&.others{
-			background-position: -574px -460px;
+			background-position: @sidebar-x-pos -460px;
 		}
 
 		&.special{
-			background-position: -574px -552px;
+			background-position: @sidebar-x-pos -552px;
 		}
 	}
 
 	&.field {
-		background-image: url(../images/fs-icons.png);
-		width: 286px;
-		height: 75px;
+		background-image: url(@location);
+		width: @field-width;
+		height: @field-height;
 
-		-ms-transform: scale(0.6,0.6); /* IE 9 */
-		-webkit-transform: scale(0.6,0.6); /* Chrome, Safari, Opera */
-		transform: scale(0.6,0.6);
+		-ms-transform: scale(@field-scale,@field-scale); /* IE 9 */
+		-webkit-transform: scale(@field-scale,@field-scale); /* Chrome, Safari, Opera */
+		transform: scale(@field-scale,@field-scale);
 
 		&.text{
-			background-position: -0px 0px;
+			background-position: @field-x-pos 0px;
 		}
 
 		&.text:hover{
-			background-position: -286px 0px;
+			background-position: @field-x-pos-hover 0px;
 		}
 
 		&.textarea{
-			background-position: -0px -92px;
+			background-position: @field-x-pos -92px;
 		}
 
 		&.textarea:hover{
-			background-position: -286px -92px;
+			background-position: @field-x-pos-hover -92px;
 		}
 
 		&.password{
-			background-position: -0px -184px;
+			background-position: @field-x-pos -184px;
 		}
 
 		&.password:hover{
-			background-position: -286px -184px;
+			background-position: @field-x-pos-hover -184px;
 		}
 
 		&.date{
-			background-position: -0px -276px;
+			background-position: @field-x-pos -276px;
 		}
 
 		&.date:hover{
-			background-position: -286px -276px;
+			background-position: @field-x-pos-hover -276px;
 		}
 
 		&.time{
-			background-position: -0px -368px;
+			background-position: @field-x-pos -368px;
 		}
 
 		&.time:hover{
-			background-position: -286px -368px;
+			background-position: @field-x-pos-hover -368px;
 		}
 
 		&.datetime{
-			background-position: -0px -460px;
+			background-position: @field-x-pos -460px;
 		}
 
 		&.datetime:hover{
-			background-position: -286px -460px;
+			background-position: @field-x-pos-hover -460px;
 		}
 
 		&.number{
-			background-position: -0px -552px;
+			background-position: @field-x-pos -552px;
 		}
 
 		&.number:hover{
-			background-position: -286px -552px;
+			background-position: @field-x-pos-hover -552px;
 		}
 
 		&.range {
-			background-position: -0px -644px;
+			background-position: @field-x-pos -644px;
 		}
 
 		&.range:hover{
-			background-position: -286px -644px;
+			background-position: @field-x-pos-hover -644px;
 		}
 
 		&.upload{
-			background-position: -0px -736px;
+			background-position: @field-x-pos -736px;
 		}
 
 		&.upload:hover{
-			background-position: -286px -736px;
+			background-position: @field-x-pos-hover -736px;
 		}
 
 		&.subform{
-			background-position: -0px -828px;
+			background-position: @field-x-pos -828px;
 		}
 
 		&.subform:hover{
-			background-position: -286px -828px;
+			background-position: @field-x-pos-hover -828px;
 		}
 
 		&.autoLookup{
-			background-position: -0px -920px;
+			background-position: @field-x-pos -920px;
 		}
 
 		&.autoLookup:hover{
-			background-position: -286px -920px;
+			background-position: @field-x-pos-hover -920px;
 		}
 
 		&.hidden{
-			background-position: -0px -1012px;
+			background-position: @field-x-pos -1012px;
 		}
 
 		&.hidden:hover{
-			background-position: -286px -1012px;
+			background-position: @field-x-pos-hover -1012px;
 		}
 
 		&.button{
-			background-position: -0px -1104px;
+			background-position: @field-x-pos -1104px;
 		}
 
 		&.button:hover{
-			background-position: -286px -1104px;
+			background-position: @field-x-pos-hover -1104px;
 		}
 
 		&.staticText{
-			background-position: -0px -1191px;
+			background-position: @field-x-pos -1191px;
 		}
 
 		&.staticText:hover{
-			background-position: -286px -1191px;
+			background-position: @field-x-pos-hover -1191px;
 		}
 
 		&.html{
-			background-position: -0px -1283px;
+			background-position: @field-x-pos -1283px;
 		}
 
 		&.html:hover{
-			background-position: -286px -1283px;
+			background-position: @field-x-pos-hover -1283px;
 		}
 
 		&.spacer{
-			background-position: -0px -1375px;
+			background-position: @field-x-pos -1375px;
 		}
 
 		&.spacer:hover{
-			background-position: -286px -1375px;
+			background-position: @field-x-pos-hover -1375px;
 		}
 
 		&.line{
-			background-position: -0px -1467px;
+			background-position: @field-x-pos -1467px;
 		}
 
 		&.line:hover{
-			background-position: -286px -1467px;
+			background-position: @field-x-pos-hover -1467px;
 		}
 		
 		&.select{
-			background-position: -0px -1559px;
+			background-position: @field-x-pos -1559px;
 		}
 
 		&.select:hover{
-			background-position: -286px -1559px;
+			background-position: @field-x-pos-hover -1559px;
 		}
 
 		&.radio{
-			background-position: -0px -1651px;
+			background-position: @field-x-pos -1651px;
 		}
 
 		&.radio:hover{
-			background-position: -286px -1651px;
+			background-position: @field-x-pos-hover -1651px;
 		}
 
 		&.checkbox{
-			background-position: -0px -1743px;
+			background-position: @field-x-pos -1743px;
 		}
 
 		&.checkbox:hover{
-			background-position: -286px -1743px;
+			background-position: @field-x-pos-hover -1743px;
 		}
 
 		&.mapSingle {
-			background-position: -0px -1835px;
+			background-position: @field-x-pos -1835px;
 		}
 
 		&.mapSingle:hover {
-			background-position: -286px -1835px;
+			background-position: @field-x-pos-hover -1835px;
 		}
 
 		&.mapMultiple {
-			background-position: -0px -1927px;
+			background-position: @field-x-pos -1927px;
 		}
 
 		&.mapMultiple:hover{
-			background-position: -286px -1927px;
+			background-position: @field-x-pos-hover -1927px;
 		}
 	}
 
 	&.field-no-text {
-		background-image: url(../images/fs-icons.png);
-		width: 75px;
-		height: 75px;
+		background-image: url(@location);
+		width: @field-no-text-width;
+		height: @field-no-text-height;
 
-		-ms-transform: scale(1,1); /* IE 9 */
-		-webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
-		transform: scale(1,1);
+		-ms-transform: scale(@field-no-text-scale,@field-no-text-scale); /* IE 9 */
+		-webkit-transform: scale(@field-no-text-scale,@field-no-text-scale); /* Chrome, Safari, Opera */
+		transform: scale(@field-no-text-scale,@field-no-text-scale);
 
 		&.text{
-			background-position: -0px 0px;
+			background-position: @field-x-pos 0px;
 		}
 
 		&.text:hover{
-			background-position: -286px 0px;
+			background-position: @field-x-pos-hover 0px;
 		}
 
 		&.textarea{
-			background-position: -0px -92px;
+			background-position: @field-x-pos -92px;
 		}
 
 		&.textarea:hover{
-			background-position: -286px -92px;
+			background-position: @field-x-pos-hover -92px;
 		}
 
 		&.password{
-			background-position: -0px -184px;
+			background-position: @field-x-pos -184px;
 		}
 
 		&.password:hover{
-			background-position: -286px -184px;
+			background-position: @field-x-pos-hover -184px;
 		}
 
 		&.date{
-			background-position: -0px -276px;
+			background-position: @field-x-pos -276px;
 		}
 
 		&.date:hover{
-			background-position: -286px -276px;
+			background-position: @field-x-pos-hover -276px;
 		}
 
 		&.time{
-			background-position: -0px -368px;
+			background-position: @field-x-pos -368px;
 		}
 
 		&.time:hover{
-			background-position: -286px -368px;
+			background-position: @field-x-pos-hover -368px;
 		}
 
 		&.datetime{
-			background-position: -0px -460px;
+			background-position: @field-x-pos -460px;
 		}
 
 		&.datetime:hover{
-			background-position: -286px -460px;
+			background-position: @field-x-pos-hover -460px;
 		}
 
 		&.number{
-			background-position: -0px -552px;
+			background-position: @field-x-pos -552px;
 		}
 
 		&.number:hover{
-			background-position: -286px -552px;
+			background-position: @field-x-pos-hover -552px;
 		}
 
 		&.range {
-			background-position: -0px -644px;
+			background-position: @field-x-pos -644px;
 		}
 
 		&.range:hover{
-			background-position: -286px -644px;
+			background-position: @field-x-pos-hover -644px;
 		}
 
 		&.upload{
-			background-position: -0px -736px;
+			background-position: @field-x-pos -736px;
 		}
 
 		&.upload:hover{
-			background-position: -286px -736px;
+			background-position: @field-x-pos-hover -736px;
 		}
 
 		&.subform{
-			background-position: -0px -828px;
+			background-position: @field-x-pos -828px;
 		}
 
 		&.subform:hover{
-			background-position: -286px -828px;
+			background-position: @field-x-pos-hover -828px;
 		}
 
 		&.autoLookup{
-			background-position: -0px -920px;
+			background-position: @field-x-pos -920px;
 		}
 
 		&.autoLookup:hover{
-			background-position: -286px -920px;
+			background-position: @field-x-pos-hover -920px;
 		}
 
 		&.hidden{
-			background-position: -0px -1012px;
+			background-position: @field-x-pos -1012px;
 		}
 
 		&.hidden:hover{
-			background-position: -286px -1012px;
+			background-position: @field-x-pos-hover -1012px;
 		}
 
 		&.button{
-			background-position: -0px -1104px;
+			background-position: @field-x-pos -1104px;
 		}
 
 		&.button:hover{
-			background-position: -286px -1104px;
+			background-position: @field-x-pos-hover -1104px;
 		}
 
 		&.staticText{
-			background-position: -0px -1191px;
+			background-position: @field-x-pos -1191px;
 		}
 
 		&.staticText:hover{
-			background-position: -286px -1191px;
+			background-position: @field-x-pos-hover -1191px;
 		}
 
 		&.html{
-			background-position: -0px -1283px;
+			background-position: @field-x-pos -1283px;
 		}
 
 		&.html:hover{
-			background-position: -286px -1283px;
+			background-position: @field-x-pos-hover -1283px;
 		}
 
 		&.spacer{
-			background-position: -0px -1375px;
+			background-position: @field-x-pos -1375px;
 		}
 
 		&.spacer:hover{
-			background-position: -286px -1375px;
+			background-position: @field-x-pos-hover -1375px;
 		}
 
 		&.line{
-			background-position: -0px -1467px;
+			background-position: @field-x-pos -1467px;
 		}
 
 		&.line:hover{
-			background-position: -286px -1467px;
+			background-position: @field-x-pos-hover -1467px;
 		}
 		
 		&.select{
-			background-position: -0px -1559px;
+			background-position: @field-x-pos -1559px;
 		}
 
 		&.select:hover{
-			background-position: -286px -1559px;
+			background-position: @field-x-pos-hover -1559px;
 		}
 
 		&.radio{
-			background-position: -0px -1651px;
+			background-position: @field-x-pos -1651px;
 		}
 
 		&.radio:hover{
-			background-position: -286px -1651px;
+			background-position: @field-x-pos-hover -1651px;
 		}
 
 		&.checkbox{
-			background-position: -0px -1743px;
+			background-position: @field-x-pos -1743px;
 		}
 
 		&.checkbox:hover{
-			background-position: -286px -1743px;
+			background-position: @field-x-pos-hover -1743px;
 		}
 
 		&.mapSingle {
-			background-position: -0px -1835px;
+			background-position: @field-x-pos -1835px;
 		}
 
 		&.mapSingle:hover {
-			background-position: -286px -1835px;
+			background-position: @field-x-pos-hover -1835px;
 		}
 
 		&.mapMultiple {
-			background-position: -0px -1927px;
+			background-position: @field-x-pos -1927px;
 		}
 
 		&.mapMultiple:hover{
-			background-position: -286px -1927px;
+			background-position: @field-x-pos-hover -1927px;
 		}
 	}
 }
