@@ -42,7 +42,7 @@
 .fs-icon.field-mapSingle:hover{background-position:-286px -1835px}
 .fs-icon.field-mapMultiple{background-position:0 -1927px}
 .fs-icon.field-mapMultiple:hover{background-position:-286px -1927px}
-.fs-icon-no-text{background-image:url(../images/icons.png);width:75px;height:75px;-ms-transform:scale(1, 1);-webkit-transform:scale(1, 1);transform:scale(1, 1)}.fs-icon-no-text.field-text{background-position:0 0}
+.fs-icon-no-text{background-image:url(../images/fs-icons.png);width:75px;height:75px;-ms-transform:scale(1, 1);-webkit-transform:scale(1, 1);transform:scale(1, 1)}.fs-icon-no-text.field-text{background-position:0 0}
 .fs-icon-no-text.field-text:hover{background-position:-286px 0}
 .fs-icon-no-text.field-textarea{background-position:0 -92px}
 .fs-icon-no-text.field-textarea:hover{background-position:-286px -92px}
