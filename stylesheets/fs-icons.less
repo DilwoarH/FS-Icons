@@ -1,371 +1,432 @@
-.fs-icon {
-	background-image: url(../images/fs-icons.png);
-	width: 286px;
-	height: 75px;
-
-	-ms-transform: scale(0.6,0.6); /* IE 9 */
-	-webkit-transform: scale(0.6,0.6); /* Chrome, Safari, Opera */
-	transform: scale(0.6,0.6);
-
-	&.field-text{
-		background-position: -0px 0px;
-	}
-
-	&.field-text:hover{
-		background-position: -286px 0px;
-	}
-
-	&.field-textarea{
-		background-position: -0px -92px;
-	}
-
-	&.field-textarea:hover{
-		background-position: -286px -92px;
-	}
-
-	&.field-password{
-		background-position: -0px -184px;
-	}
-
-	&.field-password:hover{
-		background-position: -286px -184px;
-	}
-
-	&.field-date{
-		background-position: -0px -276px;
-	}
-
-	&.field-date:hover{
-		background-position: -286px -276px;
-	}
-
-	&.field-time{
-		background-position: -0px -368px;
-	}
-
-	&.field-time:hover{
-		background-position: -286px -368px;
-	}
-
-	&.field-datetime{
-		background-position: -0px -460px;
-	}
-
-	&.field-datetime:hover{
-		background-position: -286px -460px;
-	}
-
-	&.field-number{
-		background-position: -0px -552px;
-	}
-
-	&.field-number:hover{
-		background-position: -286px -552px;
-	}
-
-	&.field-range {
-		background-position: -0px -644px;
-	}
-
-	&.field-range:hover{
-		background-position: -286px -644px;
-	}
-
-	&.field-upload{
-		background-position: -0px -736px;
-	}
-
-	&.field-upload:hover{
-		background-position: -286px -736px;
-	}
-
-	&.field-subform{
-		background-position: -0px -828px;
-	}
-
-	&.field-subform:hover{
-		background-position: -286px -828px;
-	}
-
-	&.field-autoLookup{
-		background-position: -0px -920px;
-	}
-
-	&.field-autoLookup:hover{
-		background-position: -286px -920px;
-	}
-
-	&.field-hidden{
-		background-position: -0px -1012px;
-	}
-
-	&.field-hidden:hover{
-		background-position: -286px -1012px;
-	}
-
-	&.field-button{
-		background-position: -0px -1104px;
-	}
-
-	&.field-button:hover{
-		background-position: -286px -1104px;
-	}
-
-	&.field-staticText{
-		background-position: -0px -1191px;
-	}
-
-	&.field-staticText:hover{
-		background-position: -286px -1191px;
-	}
-
-	&.field-html{
-		background-position: -0px -1283px;
-	}
-
-	&.field-html:hover{
-		background-position: -286px -1283px;
-	}
-
-	&.field-spacer{
-		background-position: -0px -1375px;
-	}
-
-	&.field-spacer:hover{
-		background-position: -286px -1375px;
-	}
-
-	&.field-line{
-		background-position: -0px -1467px;
-	}
-
-	&.field-line:hover{
-		background-position: -286px -1467px;
-	}
-	
-	&.field-select{
-		background-position: -0px -1559px;
-	}
-
-	&.field-select:hover{
-		background-position: -286px -1559px;
-	}
-
-	&.field-radio{
-		background-position: -0px -1651px;
-	}
-
-	&.field-radio:hover{
-		background-position: -286px -1651px;
-	}
-
-	&.field-checkbox{
-		background-position: -0px -1743px;
-	}
-
-	&.field-checkbox:hover{
-		background-position: -286px -1743px;
-	}
-
-	&.field-mapSingle {
-		background-position: -0px -1835px;
-	}
-
-	&.field-mapSingle:hover {
-		background-position: -286px -1835px;
-	}
-
-	&.field-mapMultiple {
-		background-position: -0px -1927px;
-	}
-
-	&.field-mapMultiple:hover{
-		background-position: -286px -1927px;
-	}
-}
-
-.fs-icon-no-text {
-	background-image: url(../images/fs-icons.png);
-	width: 75px;
-	height: 75px;
-
-	-ms-transform: scale(1,1); /* IE 9 */
-	-webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
-	transform: scale(1,1);
-
-	&.field-text{
-		background-position: -0px 0px;
-	}
-
-	&.field-text:hover{
-		background-position: -286px 0px;
-	}
-
-	&.field-textarea{
-		background-position: -0px -92px;
-	}
-
-	&.field-textarea:hover{
-		background-position: -286px -92px;
-	}
-
-	&.field-password{
-		background-position: -0px -184px;
-	}
-
-	&.field-password:hover{
-		background-position: -286px -184px;
-	}
-
-	&.field-date{
-		background-position: -0px -276px;
-	}
-
-	&.field-date:hover{
-		background-position: -286px -276px;
-	}
-
-	&.field-time{
-		background-position: -0px -368px;
-	}
-
-	&.field-time:hover{
-		background-position: -286px -368px;
-	}
-
-	&.field-datetime{
-		background-position: -0px -460px;
-	}
-
-	&.field-datetime:hover{
-		background-position: -286px -460px;
-	}
+//generic
+@location : '../images/fs-icons.png';
+
+//sidebar
+@sidebar-scale: 1;
+@sidebar-width: 92px;
+@sidebar-height: 92px;
+@sidebar-x-pos: -574px;
+
+//field
+@field-scale: 0.6;
+@field-width: 286px;
+@field-height: 92px;
+@field-x-pos: 0px;
+@field-x-pos-hover: -286px;
+
+//field-no-text
+@field-no-text-scale: 1;
+@field-no-text-width: 75px;
+@field-no-text-height: 75px;
+
+.fs-icons {
+	&.sidebar {
+		background-image: url(@location);
+		width: 92px;
+		height: 92px;
+
+		-ms-transform: scale(@sidebar-scale,@sidebar-scale); /* IE 9 */
+		-webkit-transform: scale(@sidebar-scale,@sidebar-scale); /* Chrome, Safari, Opera */
+		transform: scale(@sidebar-scale,@sidebar-scale);
+
+		&.text{
+			background-position: @sidebar-x-pos 0px;
+		}
+
+		&.number{
+			background-position: @sidebar-x-pos -92px;
+		}
+
+		&.list{
+			background-position: @sidebar-x-pos -184px;
+		}
+
+		&.datetime{
+			background-position: @sidebar-x-pos -276px;
+		}
+
+		&.map{
+			background-position: @sidebar-x-pos -368px;
+		}
+
+		&.others{
+			background-position: @sidebar-x-pos -460px;
+		}
+
+		&.special{
+			background-position: @sidebar-x-pos -552px;
+		}
+	}
+
+	&.field {
+		background-image: url(@location);
+		width: @field-width;
+		height: @field-height;
+
+		-ms-transform: scale(@field-scale,@field-scale); /* IE 9 */
+		-webkit-transform: scale(@field-scale,@field-scale); /* Chrome, Safari, Opera */
+		transform: scale(@field-scale,@field-scale);
+
+		&.text{
+			background-position: @field-x-pos 0px;
+		}
+
+		&.text:hover{
+			background-position: @field-x-pos-hover 0px;
+		}
+
+		&.textarea{
+			background-position: @field-x-pos -92px;
+		}
+
+		&.textarea:hover{
+			background-position: @field-x-pos-hover -92px;
+		}
+
+		&.password{
+			background-position: @field-x-pos -184px;
+		}
+
+		&.password:hover{
+			background-position: @field-x-pos-hover -184px;
+		}
+
+		&.date{
+			background-position: @field-x-pos -276px;
+		}
+
+		&.date:hover{
+			background-position: @field-x-pos-hover -276px;
+		}
+
+		&.time{
+			background-position: @field-x-pos -368px;
+		}
 
-	&.field-number{
-		background-position: -0px -552px;
-	}
-
-	&.field-number:hover{
-		background-position: -286px -552px;
-	}
-
-	&.field-range {
-		background-position: -0px -644px;
-	}
-
-	&.field-range:hover{
-		background-position: -286px -644px;
-	}
-
-	&.field-upload{
-		background-position: -0px -736px;
-	}
+		&.time:hover{
+			background-position: @field-x-pos-hover -368px;
+		}
+
+		&.datetime{
+			background-position: @field-x-pos -460px;
+		}
+
+		&.datetime:hover{
+			background-position: @field-x-pos-hover -460px;
+		}
+
+		&.number{
+			background-position: @field-x-pos -552px;
+		}
+
+		&.number:hover{
+			background-position: @field-x-pos-hover -552px;
+		}
+
+		&.range {
+			background-position: @field-x-pos -644px;
+		}
+
+		&.range:hover{
+			background-position: @field-x-pos-hover -644px;
+		}
+
+		&.upload{
+			background-position: @field-x-pos -736px;
+		}
+
+		&.upload:hover{
+			background-position: @field-x-pos-hover -736px;
+		}
+
+		&.subform{
+			background-position: @field-x-pos -828px;
+		}
+
+		&.subform:hover{
+			background-position: @field-x-pos-hover -828px;
+		}
 
-	&.field-upload:hover{
-		background-position: -286px -736px;
-	}
-
-	&.field-subform{
-		background-position: -0px -828px;
-	}
-
-	&.field-subform:hover{
-		background-position: -286px -828px;
-	}
+		&.autoLookup{
+			background-position: @field-x-pos -920px;
+		}
 
-	&.field-autoLookup{
-		background-position: -0px -920px;
-	}
+		&.autoLookup:hover{
+			background-position: @field-x-pos-hover -920px;
+		}
 
-	&.field-autoLookup:hover{
-		background-position: -286px -920px;
-	}
+		&.hidden{
+			background-position: @field-x-pos -1012px;
+		}
 
-	&.field-hidden{
-		background-position: -0px -1012px;
-	}
+		&.hidden:hover{
+			background-position: @field-x-pos-hover -1012px;
+		}
 
-	&.field-hidden:hover{
-		background-position: -286px -1012px;
-	}
+		&.button{
+			background-position: @field-x-pos -1104px;
+		}
 
-	&.field-button{
-		background-position: -0px -1104px;
-	}
+		&.button:hover{
+			background-position: @field-x-pos-hover -1104px;
+		}
 
-	&.field-button:hover{
-		background-position: -286px -1104px;
-	}
+		&.staticText{
+			background-position: @field-x-pos -1191px;
+		}
 
-	&.field-staticText{
-		background-position: -0px -1191px;
-	}
+		&.staticText:hover{
+			background-position: @field-x-pos-hover -1191px;
+		}
 
-	&.field-staticText:hover{
-		background-position: -286px -1191px;
-	}
+		&.html{
+			background-position: @field-x-pos -1283px;
+		}
 
-	&.field-html{
-		background-position: -0px -1283px;
-	}
+		&.html:hover{
+			background-position: @field-x-pos-hover -1283px;
+		}
 
-	&.field-html:hover{
-		background-position: -286px -1283px;
-	}
+		&.spacer{
+			background-position: @field-x-pos -1375px;
+		}
 
-	&.field-spacer{
-		background-position: -0px -1375px;
-	}
+		&.spacer:hover{
+			background-position: @field-x-pos-hover -1375px;
+		}
 
-	&.field-spacer:hover{
-		background-position: -286px -1375px;
-	}
+		&.line{
+			background-position: @field-x-pos -1467px;
+		}
 
-	&.field-line{
-		background-position: -0px -1467px;
-	}
+		&.line:hover{
+			background-position: @field-x-pos-hover -1467px;
+		}
+		
+		&.select{
+			background-position: @field-x-pos -1559px;
+		}
 
-	&.field-line:hover{
-		background-position: -286px -1467px;
-	}
-	
-	&.field-select{
-		background-position: -0px -1559px;
-	}
+		&.select:hover{
+			background-position: @field-x-pos-hover -1559px;
+		}
 
-	&.field-select:hover{
-		background-position: -286px -1559px;
-	}
+		&.radio{
+			background-position: @field-x-pos -1651px;
+		}
 
-	&.field-radio{
-		background-position: -0px -1651px;
-	}
+		&.radio:hover{
+			background-position: @field-x-pos-hover -1651px;
+		}
 
-	&.field-radio:hover{
-		background-position: -286px -1651px;
-	}
+		&.checkbox{
+			background-position: @field-x-pos -1743px;
+		}
 
-	&.field-checkbox{
-		background-position: -0px -1743px;
-	}
+		&.checkbox:hover{
+			background-position: @field-x-pos-hover -1743px;
+		}
 
-	&.field-checkbox:hover{
-		background-position: -286px -1743px;
-	}
+		&.mapSingle {
+			background-position: @field-x-pos -1835px;
+		}
 
-	&.field-mapSingle {
-		background-position: -0px -1835px;
-	}
+		&.mapSingle:hover {
+			background-position: @field-x-pos-hover -1835px;
+		}
 
-	&.field-mapSingle:hover {
-		background-position: -286px -1835px;
-	}
+		&.mapMultiple {
+			background-position: @field-x-pos -1927px;
+		}
 
-	&.field-mapMultiple {
-		background-position: -0px -1927px;
+		&.mapMultiple:hover{
+			background-position: @field-x-pos-hover -1927px;
+		}
 	}
-
-	&.field-mapMultiple:hover{
-		background-position: -286px -1927px;
+
+	&.field-no-text {
+		background-image: url(@location);
+		width: @field-no-text-width;
+		height: @field-no-text-height;
+
+		-ms-transform: scale(@field-no-text-scale,@field-no-text-scale); /* IE 9 */
+		-webkit-transform: scale(@field-no-text-scale,@field-no-text-scale); /* Chrome, Safari, Opera */
+		transform: scale(@field-no-text-scale,@field-no-text-scale);
+
+		&.text{
+			background-position: @field-x-pos 0px;
+		}
+
+		&.text:hover{
+			background-position: @field-x-pos-hover 0px;
+		}
+
+		&.textarea{
+			background-position: @field-x-pos -92px;
+		}
+
+		&.textarea:hover{
+			background-position: @field-x-pos-hover -92px;
+		}
+
+		&.password{
+			background-position: @field-x-pos -184px;
+		}
+
+		&.password:hover{
+			background-position: @field-x-pos-hover -184px;
+		}
+
+		&.date{
+			background-position: @field-x-pos -276px;
+		}
+
+		&.date:hover{
+			background-position: @field-x-pos-hover -276px;
+		}
+
+		&.time{
+			background-position: @field-x-pos -368px;
+		}
+
+		&.time:hover{
+			background-position: @field-x-pos-hover -368px;
+		}
+
+		&.datetime{
+			background-position: @field-x-pos -460px;
+		}
+
+		&.datetime:hover{
+			background-position: @field-x-pos-hover -460px;
+		}
+
+		&.number{
+			background-position: @field-x-pos -552px;
+		}
+
+		&.number:hover{
+			background-position: @field-x-pos-hover -552px;
+		}
+
+		&.range {
+			background-position: @field-x-pos -644px;
+		}
+
+		&.range:hover{
+			background-position: @field-x-pos-hover -644px;
+		}
+
+		&.upload{
+			background-position: @field-x-pos -736px;
+		}
+
+		&.upload:hover{
+			background-position: @field-x-pos-hover -736px;
+		}
+
+		&.subform{
+			background-position: @field-x-pos -828px;
+		}
+
+		&.subform:hover{
+			background-position: @field-x-pos-hover -828px;
+		}
+
+		&.autoLookup{
+			background-position: @field-x-pos -920px;
+		}
+
+		&.autoLookup:hover{
+			background-position: @field-x-pos-hover -920px;
+		}
+
+		&.hidden{
+			background-position: @field-x-pos -1012px;
+		}
+
+		&.hidden:hover{
+			background-position: @field-x-pos-hover -1012px;
+		}
+
+		&.button{
+			background-position: @field-x-pos -1104px;
+		}
+
+		&.button:hover{
+			background-position: @field-x-pos-hover -1104px;
+		}
+
+		&.staticText{
+			background-position: @field-x-pos -1191px;
+		}
+
+		&.staticText:hover{
+			background-position: @field-x-pos-hover -1191px;
+		}
+
+		&.html{
+			background-position: @field-x-pos -1283px;
+		}
+
+		&.html:hover{
+			background-position: @field-x-pos-hover -1283px;
+		}
+
+		&.spacer{
+			background-position: @field-x-pos -1375px;
+		}
+
+		&.spacer:hover{
+			background-position: @field-x-pos-hover -1375px;
+		}
+
+		&.line{
+			background-position: @field-x-pos -1467px;
+		}
+
+		&.line:hover{
+			background-position: @field-x-pos-hover -1467px;
+		}
+		
+		&.select{
+			background-position: @field-x-pos -1559px;
+		}
+
+		&.select:hover{
+			background-position: @field-x-pos-hover -1559px;
+		}
+
+		&.radio{
+			background-position: @field-x-pos -1651px;
+		}
+
+		&.radio:hover{
+			background-position: @field-x-pos-hover -1651px;
+		}
+
+		&.checkbox{
+			background-position: @field-x-pos -1743px;
+		}
+
+		&.checkbox:hover{
+			background-position: @field-x-pos-hover -1743px;
+		}
+
+		&.mapSingle {
+			background-position: @field-x-pos -1835px;
+		}
+
+		&.mapSingle:hover {
+			background-position: @field-x-pos-hover -1835px;
+		}
+
+		&.mapMultiple {
+			background-position: @field-x-pos -1927px;
+		}
+
+		&.mapMultiple:hover{
+			background-position: @field-x-pos-hover -1927px;
+		}
 	}
 }
